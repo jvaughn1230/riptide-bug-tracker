@@ -1,0 +1,15 @@
+.login-page {
+  height: 100vh;
+}
+
+.login-container {
+  margin-top: 15rem;
+  margin-inline: 25%;
+  border: 2px solid black;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+.inner-login-container {
+  padding-inline: auto;
+}

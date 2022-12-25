@@ -1,0 +1,29 @@
+.signup-page {
+  height: 100vh;
+}
+
+.signup-container {
+  border: 2px solid black;
+  margin-top: 10rem;
+  margin-inline: 25%;
+  text-align: center;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-input {
+  width: 50%;
+  margin-inline: auto;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5;
+  margin-top: 1rem;
+}
+
+.register-btn {
+  width: 30%;
+  margin-inline: auto;
+  margin-block: 1.5rem;
+}
