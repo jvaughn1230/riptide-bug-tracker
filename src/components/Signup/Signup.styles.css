@@ -1,12 +1,25 @@
 .signup-page {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* ! Temp Color */
+  background-color: aquamarine;
+}
+
+.signup-logo {
+  margin-bottom: 5%;
 }
 
 .signup-container {
   border: 2px solid black;
-  margin-top: 10rem;
-  margin-inline: 25%;
   text-align: center;
+  border-radius: 0.5rem;
+  min-width: 30%;
+  min-height: 50%;
+  justify-self: center;
 }
 
 .signup-form {
@@ -26,4 +39,15 @@
   width: 30%;
   margin-inline: auto;
   margin-block: 1.5rem;
+}
+
+.login-link {
+  margin-bottom: 1rem;
+  font-size: clamp(0.8rem, 1.0417vw, 32px);
+}
+
+@media (max-width: 1000px) {
+  .signup-container {
+    width: 60%;
+  }
 }
