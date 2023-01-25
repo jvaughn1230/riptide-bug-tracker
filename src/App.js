@@ -9,8 +9,6 @@ import Layout from "./components/Layout";
 function App() {
   console.log(window.innerWidth);
 
-  // Verifying branch connected
-
   return (
     <div className="app">
       <Routes>
