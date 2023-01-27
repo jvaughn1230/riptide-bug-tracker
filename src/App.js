@@ -6,15 +6,21 @@ import AddBug from "./components/AddBug/AddBug";
 import ViewBugs from "./components/ViewBugs/ViewBugs";
 import Layout from "./components/Layout";
 
-function App() {
-  console.log(window.innerWidth);
+import { useSelector } from "react-redux";
 
-  // Verifying branch connected
+function App() {
+  const { auth } = useSelector((state) => state);
+  // TODO: Need to create a auth check to render loggedin vs home screen
+
+  console.log("width:" + window.innerWidth);
+  console.log("height:" + window.innerHeight);
+
+  // auth.loggedIn ? </account> : <Login />
 
   return (
     <div className="app">
       <Routes>
-        <Route index element={<Login />} />
+        <Route index element={!auth.loggedIn ? <Login /> : <Layout></Layout>} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/account" element={<Layout />}>
           <Route path="/account/viewbugs" element={<ViewBugs />} />
