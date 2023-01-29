@@ -1,0 +1,20 @@
+Data Flow
+    Need to have Bug Card with an active/inacitve state
+    Map Through this for the Bug Page
+    Need to have it set up to clear active card when on exit
+    Bug Card Details View needs to have an onClick that resets the value - will need to pass down state (redux maybe)
+
+Need to setup database
+    Create a new Co Account
+    Then have admin by default - then they can add new members through their own portal
+    will need to have a connected list for accounts 
+
+    Schema - Companies -> Admins -> Non-Admins 
+
+Admins can assign bugs but regular cannot
+Admins can view total data while regulars can view their assigned bugs and their completed bugs per day 
+
+Bug Details
+-> Add Bug should have name, urgency, due by, details, how to recreate bug
+-> Close Issue button that will give a details of how resolved and date resolved (auto, can't be changed)
+-> 

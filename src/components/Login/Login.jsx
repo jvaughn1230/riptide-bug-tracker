@@ -8,6 +8,8 @@ import logo from "../../assets/riptide-white.png";
 
 const Login = () => {
   // TODO: remove console.log once finished
+  // ! Need to add useMemo due to reloading on each press of keyboard
+
   console.log("Login Component Loaded");
 
   const dispatch = useDispatch();
