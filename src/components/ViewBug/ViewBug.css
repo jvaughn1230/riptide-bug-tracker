@@ -1,0 +1,8 @@
+.bug-details {
+  z-index: 10;
+  height: 500px;
+  width: 100px;
+  position: absolute;
+
+  border: solid 5px black;
+}
